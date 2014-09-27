@@ -2,7 +2,7 @@
  * arrays0.c - Initializing arrays (Solution)
  *
  * Computer Science 50
- * Section 1
+ * Week 3
  *
  * Eric Ouyang <eouyang@college.harvard.edu>
  * Frederick Widjaja <fwidjaja@college.harvard.edu>
@@ -12,7 +12,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int main(void) {
+int main(void)
+{
     // create the integer array with elements {65, 87, 30}
     int nums[3];
     nums[0] = 63;

@@ -2,7 +2,7 @@
  * functions0.c - Square function
  *
  * Computer Science 50
- * Section 1
+ * Week 3
  *
  * Eric Ouyang <eouyang@college.harvard.edu>
  * Frederick Widjaja <fwidjaja@college.harvard.edu>
@@ -14,7 +14,8 @@
 
 // your code goes here
 
-int main(void) {
+int main(void)
+{
     // test the square function
     printf("The square of %i is %i\n",  1,  square(1));
     printf("The square of %i is %i\n",  2,  square(2));

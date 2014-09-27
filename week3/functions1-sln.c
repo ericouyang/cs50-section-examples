@@ -2,7 +2,7 @@
  * arrays2.c - Letters in name
  *
  * Computer Science 50
- * Section 1
+ * Week 3
  *
  * Eric Ouyang <eouyang@college.harvard.edu>
  * Frederick Widjaja <fwidjaja@college.harvard.edu>
@@ -13,7 +13,8 @@
 #include <cs50.h>
 #include <string.h>
 
-int main(void) {
+int main(void)
+{
     string name = "Christopher";
 
     // replace the condition of the loop with a call to `strlen`

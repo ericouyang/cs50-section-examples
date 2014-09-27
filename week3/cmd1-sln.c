@@ -4,6 +4,8 @@
  * Nate Hardison <nate@cs.harvard.edu>
  *
  * Prints out a half pyramid with a user-supplied height.
+ *
+ * Modified to take a command line argument instead of using GetInt()
  */
 
 #include <cs50.h>

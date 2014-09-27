@@ -2,7 +2,7 @@
  * ascii1.c - Upper case conversion
  *
  * Computer Science 50
- * Section 1
+ * Week 3
  *
  * Eric Ouyang <eouyang@college.harvard.edu>
  * Frederick Widjaja <fwidjaja@college.harvard.edu>
@@ -16,7 +16,8 @@ char capitalize(char c)
     return c + ('A' - 'a');
 }
 
-int main(void) {
+int main(void)
+{
     char str[] = "computers";
     for (int i = 0, j = strlen(str); i < j; i++)
     {
