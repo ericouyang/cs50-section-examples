@@ -72,18 +72,22 @@ bool search(int needle, int haystack[], int size)
 
     # iteratively search for the needle by halving the search area
     # each time we loop through this code
-    while the size of our search area is non-negative
-        let middle equal the middle of the search area (rounded down)
+    # this loop only executes when the size of the search area is non-negative
+    while upper - lower >= 0
+        # calculate the middle position
+        int middle = (lower + upper) / 2
 
-        if needle is located at the middle position
+        if needle is in the middle of the haystack
             # we found it!
             return true
 
-        if needle is less than the middle element
-            set upper bound to before the middle element
+        if needle is smaller than the element in the middle
+            # remove the upper half from the search area
+            upper = middle - 1
 
-        if needle is greater than the middle element
-            set lower bound to after the middle element
+        if needle is larger than the element in the middle
+            # remove the lower half from the search area
+            lower = middle + 1
 
     # we've gone through the array, but still couldn't find the needle
     return false

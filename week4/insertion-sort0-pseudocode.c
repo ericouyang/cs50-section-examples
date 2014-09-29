@@ -53,17 +53,18 @@ void insertion_sort(int arr[], int size)
         # set a variable to represent where in the sorted array
         # we are currently trying to insert an element
         # this starts at the original position of the element
-        let curr_index = index of the element
+        # (think of this as the "best guess" so far in our search)
+        let insertion_index = index of the element
 
         # store the value of the element we're trying to insert
         let x = the value of the current element to sort
 
-        while curr_index > 0 and x < arr[curr_index - 1]
-            set arr[curr_index] = arr[curr_index - 1]
-            decrement curr_index
+        while insertion_index > 0 and x < arr[insertion_index - 1]
+            set arr[insertion_index] = arr[insertion_index - 1]
+            decrement insertion_index
 
         # set the found position to the element we're trying to insert
-        set arr[curr_index] = x
+        set arr[insertion_index] = x
     */
 
     // write your code here
