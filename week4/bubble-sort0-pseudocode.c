@@ -52,15 +52,14 @@ void bubble_sort(int arr[], int size)
     # set a flag for tracking whether or not we've swapped an element
     # in a particular iteration
 
-    let swapped = true
-
-    while swapped
+    do
         set swapped = false
 
         for each element in the array
             if the next element is smaller than the current element
                 swap the elements
                 set swapped = true
+    while swapped is true
 
     */
 
