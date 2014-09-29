@@ -34,13 +34,13 @@ int main(void)
     int nums2[] = {};
     int sz2 = 0;
     print_array(nums2, sz2);
-    insertion_sort(nums2, sz2);
+    selection_sort(nums2, sz2);
     print_array(nums2, sz2);
 
     int nums3[] = {12, 13, 18, 23};
     int sz3 = 4;
     print_array(nums3, sz3);
-    insertion_sort(nums3, sz3);
+    selection_sort(nums3, sz3);
     print_array(nums3, sz3);
 }
 

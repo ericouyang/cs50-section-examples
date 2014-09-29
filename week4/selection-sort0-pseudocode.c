@@ -1,4 +1,4 @@
-/**
+ls/**
  * selection-sort0.c - Selection sort
  *
  * Computer Science 50
@@ -34,19 +34,30 @@ int main(void)
     int nums2[] = {};
     int sz2 = 0;
     print_array(nums2, sz2);
-    insertion_sort(nums2, sz2);
+    selection_sort(nums2, sz2);
     print_array(nums2, sz2);
 
     int nums3[] = {12, 13, 18, 23};
     int sz3 = 4;
     print_array(nums3, sz3);
-    insertion_sort(nums3, sz3);
+    selection_sort(nums3, sz3);
     print_array(nums3, sz3);
 }
 
 // implementation of selection sort that sorts a given array in place
 void selection_sort(int arr[], int size)
 {
+    /*
+    
+    for i = 0 to size - 2
+        min = i
+        for j = i + 1 to size - 1
+            if arr[j] < arr[min]
+                min = j
+        if min != i
+            swap arr[min] and arr[i]
+            
+    */
 
     // write your code here
 }
