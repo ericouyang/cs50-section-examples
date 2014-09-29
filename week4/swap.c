@@ -1,5 +1,5 @@
 /**
- * selection-sort0.c - Selection sort
+ * swap.c - Swap example
  *
  * Computer Science 50
  * Week 4
@@ -7,7 +7,7 @@
  * Eric Ouyang <eouyang@college.harvard.edu>
  * Frederick Widjaja <fwidjaja@college.harvard.edu>
  *
- * Implement selection sort!
+ * Swap two elements within an array
  */
 #include <stdio.h>
 #include "helpers.h"
