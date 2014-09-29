@@ -19,7 +19,7 @@ void selection_sort(int arr[], int size);
 
 int main(void)
 {
-    int nums0[] = {1, 2, 5, 8, 11, 15, 21, 22, 31};
+    int nums0[] = {31, 2, 5, 15, 21, 22, 11, 8, 1};
     int sz0 = 9;
     print_array(nums0, sz0);
     selection_sort(nums0, sz0);
@@ -37,7 +37,7 @@ int main(void)
     selection_sort(nums2, sz2);
     print_array(nums2, sz2);
 
-    int nums3[] = {12, 13, 18, 23};
+    int nums3[] = {18, 23, 12, 13};
     int sz3 = 4;
     print_array(nums3, sz3);
     selection_sort(nums3, sz3);
@@ -48,15 +48,21 @@ int main(void)
 void selection_sort(int arr[], int size)
 {
     /*
-    
-    for i = 0 to size - 2
-        min = i
-        for j = i + 1 to size - 1
-            if arr[j] < arr[min]
-                min = j
-        if min != i
-            swap arr[min] and arr[i]
-            
+
+    for each element inside of array except the last one
+        # define the starting point to search for the
+        # smallest element
+        let min_index = index of the current element
+
+        # iterate through non-sorted elements in array
+        # to find smallest element
+        for each element after the current element
+            if that element is less than arr[min_index]
+                set min_index = index of that element
+
+        if min_index != index of the current element
+            swap arr[min_index] and current element
+
     */
 
     // write your code here

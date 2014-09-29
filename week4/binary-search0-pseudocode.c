@@ -82,7 +82,7 @@ bool search(int needle, int haystack[], int size)
         if needle is less than the middle element
             set upper bound to before the middle element
 
-        if middle is greater than the middle element
+        if needle is greater than the middle element
             set lower bound to after the middle element
 
     # we've gone through the array, but still couldn't find the needle

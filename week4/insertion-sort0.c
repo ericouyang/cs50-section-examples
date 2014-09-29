@@ -19,7 +19,7 @@ void insertion_sort(int arr[], int size);
 
 int main(void)
 {
-    int nums0[] = {1, 2, 5, 8, 11, 15, 21, 22, 31};
+    int nums0[] = {31, 2, 5, 15, 21, 22, 11, 8, 1};
     int sz0 = 9;
     print_array(nums0, sz0);
     insertion_sort(nums0, sz0);
@@ -37,7 +37,7 @@ int main(void)
     insertion_sort(nums2, sz2);
     print_array(nums2, sz2);
 
-    int nums3[] = {12, 13, 18, 23};
+    int nums3[] = {18, 23, 12, 13};
     int sz3 = 4;
     print_array(nums3, sz3);
     insertion_sort(nums3, sz3);

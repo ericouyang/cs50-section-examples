@@ -19,7 +19,7 @@ void insertion_sort(int arr[], int size);
 
 int main(void)
 {
-    int nums0[] = {1, 2, 5, 8, 11, 15, 21, 22, 31};
+    int nums0[] = {31, 2, 5, 15, 21, 22, 11, 8, 1};
     int sz0 = 9;
     print_array(nums0, sz0);
     insertion_sort(nums0, sz0);
@@ -37,7 +37,7 @@ int main(void)
     insertion_sort(nums2, sz2);
     print_array(nums2, sz2);
 
-    int nums3[] = {12, 13, 18, 23};
+    int nums3[] = {18, 23, 12, 13};
     int sz3 = 4;
     print_array(nums3, sz3);
     insertion_sort(nums3, sz3);
@@ -49,16 +49,17 @@ void insertion_sort(int arr[], int size)
 {
     /*
 
-    for each element inside of the array
+    for each element inside of the array except the first element
         # set a variable to represent where in the sorted array
         # we are currently trying to insert an element
         # this starts at the original position of the element
         let curr_index = index of the element
 
+        # store the value of the element we're trying to insert
         let x = the value of the current element to sort
 
         while curr_index > 0 and x < arr[curr_index - 1]
-            shift arr[curr_index - 1] right one spot
+            set arr[curr_index] = arr[curr_index - 1]
             decrement curr_index
 
         # set the found position to the element we're trying to insert
