@@ -26,7 +26,7 @@ int main(void)
     int* counts = alpha_count(str);
     for (int i = 0; i < ALPHA_LEN; i++)
     {
-        printf("%c: %d\n", 'a' + i, counts[i]);
+        printf("%c: %d\t", 'a' + i, counts[i]);
     }
 
     free(counts);
