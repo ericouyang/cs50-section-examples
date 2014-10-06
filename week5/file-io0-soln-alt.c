@@ -28,7 +28,11 @@ int main(int argc, char* argv[])
     // if file was not successfully opened
     if (input == NULL)
     {
-        printf("Can't open the input file %s!\n", input_filename);
+        printf(
+            "There was a problem opening up %s for reading.\n",
+            input_filename
+        );
+
         return 1;
     }
 
@@ -38,7 +42,10 @@ int main(int argc, char* argv[])
     // if file was not successfully opened
     if (output == NULL)
     {
-        printf("Can't open the output file %s!\n", output_filename);
+        printf(
+            "There was a problem opening up %s for writing.\n",
+            output_filename
+        );
 
         // close the input file
         fclose(input);
@@ -46,15 +53,25 @@ int main(int argc, char* argv[])
         return 2;
     }
 
-    // loop through the file and write each byte to the output file
-    char c = fgetc(input);
-    while (c != EOF)
+    // loop through the file and write to output one
+    // character at a time
+    char c;
+    while (1)
     {
-        fputc(c, output);
         c = fgetc(input);
+
+        // if we've reached the end of the file, quit the loop
+        if (c == EOF)
+        {
+            break;
+        }
+
+        fputc(c, output);
     }
 
-    // close the files we've opened
+
+    // close files -- otherwise, we'd have memory leaks!
     fclose(input);
     fclose(output);
+
 }

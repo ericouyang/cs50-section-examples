@@ -1,5 +1,5 @@
 /**
- * malloc0.c - Malloc Exercise
+ * malloc0-sln.c - Malloc Exercise (Solution)
  *
  * Computer Science 50
  * Week 5
@@ -14,7 +14,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
-#include <string.h>
 
 #define ALPHA_LEN 26
 
@@ -24,10 +23,13 @@ int main(void)
 {
     char* str = "The quick brown fox jumps over the lazy dog";
     int* counts = alpha_count(str);
+
+    // print out the count of each alphabet in our string
     for (int i = 0; i < ALPHA_LEN; i++)
     {
-        printf("%c: %d\n", 'a' + i, counts[i]);
+        printf("%c: %d\t", 'a' + i, counts[i]);
     }
+    printf("\n");
 
     free(counts);
 }
@@ -50,13 +52,15 @@ int* alpha_count(char* str)
     }
 
     // loop through the string
-    for (int i = 0, n = strlen(str); i < n; i++)
+    for (char* ptr = str; *ptr != '\0'; ptr++)
     {
+        char c = *ptr;
+
         // only count alpha characters
-        if (isalpha(str[i]))
+        if (isalpha(c))
         {
             // increment the appropriate counter
-            counts[tolower(str[i]) - 'a']++;
+            counts[tolower(c) - 'a'] += 1;
         }
     }
 
