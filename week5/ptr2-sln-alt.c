@@ -28,9 +28,7 @@ int length(char* str)
     }
 
     int count = 0;
-    for (char* ptr = str; *ptr != '\0'; ptr++)
-    {
-        count++;
-    }
+    // initialization is omitted, since we initalize count on line 30
+    for (; *(str + count) != '\0'; count++);
     return count;
 }
