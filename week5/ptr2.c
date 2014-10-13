@@ -7,10 +7,10 @@
  * Eric Ouyang <eouyang@college.harvard.edu>
  * Frederick Widjaja <fwidjaja@college.harvard.edu>
  */
- 
+
  #include <stdio.h>
 
-int length(char*);
+int length(char* str);
 
 int main(void)
 {
@@ -19,6 +19,7 @@ int main(void)
     printf("%d\n", length("Amazing"));
 }
 
+// calculates the length of a string
 int length(char* str)
 {
     return 0;

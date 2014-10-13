@@ -42,6 +42,12 @@ int main(void)
     free(counts);
 }
 
+/**
+ *  Returns a pointer to an integer array that stores counts
+ *  of alphabetic characters within a given string.
+ *
+ *  Returns NULL on error
+ */
 int* alpha_count(char* str)
 {
     // allocate some space to store our counts
