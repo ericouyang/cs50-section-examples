@@ -1,5 +1,5 @@
 /**
- * malloc0-sln.c - Malloc Exercise (Solution)
+ * malloc0-sln-alt.c - Malloc Exercise (Alternate Solution)
  *
  * Computer Science 50
  * Week 5
@@ -24,6 +24,13 @@ int main(void)
     char* str = "The quick brown fox jumps over the lazy dog";
     int* counts = alpha_count(str);
 
+    // if alpha_count encounters an error
+    if (counts == NULL)
+    {
+        printf("There was an error counting the characters.\n");
+        return 1;
+    }
+
     // print out the count of each alphabet in our string
     for (int i = 0; i < ALPHA_LEN; i++)
     {
@@ -34,6 +41,12 @@ int main(void)
     free(counts);
 }
 
+/**
+ *  Returns a pointer to an integer array that stores counts
+ *  of alphabetic characters within a given string.
+ *
+ *  Returns NULL on error
+ */
 int* alpha_count(char* str)
 {
     // allocate some space to store our counts

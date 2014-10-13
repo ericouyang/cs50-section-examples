@@ -1,5 +1,5 @@
 /**
- * file-io0.c - Copy a file byte-by-byte
+ * file-io0-sln-alt.c - Copy a file byte-by-byte (Alternate Solution)
  *
  * Computer Science 50
  * Week 5
