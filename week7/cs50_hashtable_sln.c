@@ -17,7 +17,7 @@
 #include "cs50_hashtable.h"
 
 // hashes a given string
-int cs50_hash(char* s)
+int ht50_hash(char* s)
 {
     // hash on first letter of string
     int hash = toupper(s[0]) - 'A';
@@ -26,7 +26,7 @@ int cs50_hash(char* s)
 }
 
 // creates a new node for the hash table
-node* cs50_new_node(char* value)
+node* ht50_new_node(char* value)
 {
     node* new_node = calloc(1, sizeof(node));
     if (new_node == NULL)
@@ -41,14 +41,14 @@ node* cs50_new_node(char* value)
 
 // inserts a value into the hashtable
 // return true, if added (i.e. was not already in table)
-bool cs50_insert_value(node* hash_table[], char* s)
+bool ht50_insert_value(node* hash_table[], char* s)
 {
-    int h = cs50_hash(s);
+    int h = ht50_hash(s);
     node* head = hash_table[h];
 
     if (head == NULL)
     {
-        hash_table[h] = cs50_new_node(s);
+        hash_table[h] = ht50_new_node(s);
         return true;
     }
     else
@@ -65,16 +65,16 @@ bool cs50_insert_value(node* hash_table[], char* s)
                 break;
             }
         }
-        n->next = cs50_new_node(s);
+        n->next = ht50_new_node(s);
         return true;
     }
 }
 
 // removes a value from the hashtable
 // returns true, if removal was successful
-bool cs50_remove_value(node* hash_table[], char* s)
+bool ht50_remove_value(node* hash_table[], char* s)
 {
-    int h = cs50_hash(s);
+    int h = ht50_hash(s);
     node* head = hash_table[h];
 
     if (head == NULL)
@@ -106,7 +106,7 @@ bool cs50_remove_value(node* hash_table[], char* s)
 }
 
 // free the memory allocated for a hashtable
-void cs50_free_table(node* hash_table[])
+void ht50_free_table(node* hash_table[])
 {
     for (int i = 0; i < HASHTABLE_SIZE; i++)
     {
@@ -122,7 +122,7 @@ void cs50_free_table(node* hash_table[])
 }
 
 // utility function to print a hashtable
-void cs50_print_table(node* hash_table[])
+void ht50_print_table(node* hash_table[])
 {
     for (int i = 0; i < HASHTABLE_SIZE; i++)
     {

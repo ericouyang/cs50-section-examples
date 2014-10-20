@@ -20,14 +20,14 @@ typedef struct node
 
 // inserts a value into the hashtable
 // return true, if added (i.e. was not already in table)
-bool cs50_insert_value(node* hash_table[], char* s);
+bool ht50_insert_value(node* hash_table[], char* s);
 
 // removes a value from the hashtable
 // returns true, if removal was successful
-bool cs50_remove_value(node* hash_table[], char* s);
+bool ht50_remove_value(node* hash_table[], char* s);
 
 // free the memory allocated for a hashtable
-void cs50_free_table(node* hash_table[]);
+void ht50_free_table(node* hash_table[]);
 
 // utility function to print a hashtable
-void cs50_print_table(node* hash_table[]);
+void ht50_print_table(node* hash_table[]);

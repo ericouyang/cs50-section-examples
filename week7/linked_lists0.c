@@ -19,48 +19,48 @@ int main(void)
     node* list = NULL;
 
     // add a bunch of elements
-    list = cs50_ll_prepend(list, 5);
-    list = cs50_ll_prepend(list, 15);
-    list = cs50_ll_prepend(list, 2);
-    list = cs50_ll_prepend(list, 9);
-    list = cs50_ll_prepend(list, 11);
+    list = ll50_prepend(list, 5);
+    list = ll50_prepend(list, 15);
+    list = ll50_prepend(list, 2);
+    list = ll50_prepend(list, 9);
+    list = ll50_prepend(list, 11);
 
     printf("Original list:\n");
-    cs50_ll_print(list);
+    ll50_print(list);
 
     // test out the length function
-    printf("Length: %i\n", cs50_ll_length(list));
+    printf("Length: %i\n", ll50_length(list));
 
     printf("\n");
 
     // test out the contains function
     printf(
         "Contains 5? %s\n",
-        cs50_ll_contains(list, 5) ? "True" : "False"
+        ll50_contains(list, 5) ? "True" : "False"
     );
     printf(
         "Contains 6? %s\n",
-        cs50_ll_contains(list, 6) ? "True" : "False"
+        ll50_contains(list, 6) ? "True" : "False"
     );
     printf(
         "Contains 11? %s\n",
-        cs50_ll_contains(list, 11) ? "True" : "False"
+        ll50_contains(list, 11) ? "True" : "False"
     );
 
     printf("\n");
 
     printf("Removing 9, 15, and 10...\n");
-    list = cs50_ll_remove(list, 9);
-    list = cs50_ll_remove(list, 15);
-    list = cs50_ll_remove(list, 10);
+    list = ll50_remove(list, 9);
+    list = ll50_remove(list, 15);
+    list = ll50_remove(list, 10);
 
     printf("\n");
 
     printf("New list:\n");
-    cs50_ll_print(list);
+    ll50_print(list);
 
     // test out the length function
-    printf("Length: %i\n", cs50_ll_length(list));
+    printf("Length: %i\n", ll50_length(list));
 
-    cs50_ll_free(list);
+    ll50_free(list);
 }

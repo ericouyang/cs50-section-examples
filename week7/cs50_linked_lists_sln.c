@@ -15,7 +15,7 @@
 #include "cs50_linked_lists.h"
 
 // returns the length of a linked list
-int cs50_ll_length(node* head)
+int ll50_length(node* head)
 {
     // create a pointer to track where we are in the list
     node* curr_node = head;
@@ -33,7 +33,7 @@ int cs50_ll_length(node* head)
 }
 
 // returns true if the linked list contains n
-bool cs50_ll_contains(node* head, int n)
+bool ll50_contains(node* head, int n)
 {
     // create a pointer to track where we are in the list
     node* curr_node = head;
@@ -56,7 +56,7 @@ bool cs50_ll_contains(node* head, int n)
 // appends a new element to the beginning of a linked list
 // returns the new head of the list
 // returns NULL on error
-node* cs50_ll_prepend(node* head, int n)
+node* ll50_prepend(node* head, int n)
 {
     // make an new node
     node* new_node = malloc(sizeof(node));
@@ -77,7 +77,7 @@ node* cs50_ll_prepend(node* head, int n)
 
 // removes an element from a linked list
 // returns the new head of the list
-node* cs50_ll_remove(node* head, int n)
+node* ll50_remove(node* head, int n)
 {
     // create a pointer to track where we previously were
     // within the list
@@ -120,7 +120,7 @@ node* cs50_ll_remove(node* head, int n)
 }
 
 // frees all elements within a linked list
-void cs50_ll_free(node* head)
+void ll50_free(node* head)
 {
     // create a pointer to track where we are in the list
     node* curr_node = head;
@@ -140,7 +140,7 @@ void cs50_ll_free(node* head)
 }
 
 // prints out a linked list to stdout
-void cs50_ll_print(node* head)
+void ll50_print(node* head)
 {
     // create a pointer to track where we are in the list
     node* curr_node = head;
