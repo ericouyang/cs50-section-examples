@@ -26,6 +26,7 @@ int ll50_length(node* head)
     {
         length++;
 
+        // update the curr_node
         curr_node = curr_node->next;
     }
 
@@ -41,19 +42,21 @@ bool ll50_contains(node* head, int n)
     // iterate through the list and return true if element found
     while (curr_node != NULL)
     {
+        // if we found the element we're looking for
         if (curr_node->n == n)
         {
             return true;
         }
 
+        // update the curr_node
         curr_node = curr_node->next;
     }
 
-    // the element wasn't within the linked list
+    // the element wasn't found within the linked list
     return false;
 }
 
-// appends a new element to the beginning of a linked list
+// prepends a new element to the beginning of a linked list
 // returns the new head of the list
 // returns NULL on error
 node* ll50_prepend(node* head, int n)
@@ -77,6 +80,7 @@ node* ll50_prepend(node* head, int n)
 
 // removes an element from a linked list
 // returns the new head of the list
+// does nothing when element is not within the linked list
 node* ll50_remove(node* head, int n)
 {
     // create a pointer to track where we previously were
@@ -86,8 +90,10 @@ node* ll50_remove(node* head, int n)
     // create a pointer to track where we are in the list
     node* curr_node = head;
 
+    // iterate through the list to look for n
     while (curr_node != NULL)
     {
+        // if we found it
         if (curr_node->n == n)
         {
             // save the pointer to the next node
@@ -96,17 +102,21 @@ node* ll50_remove(node* head, int n)
             // release the memory for the node we're deleting
             free(curr_node);
 
-            // if we have a previous node, remove the current element
-            // and link the previous node to the next node
-            if (prev_node != NULL)
+            // if n is at the head of the list (no previous node)
+            // return the second node, which will be the new head of list
+            if (prev_node == NULL)
             {
-                prev_node->next = next_node;
-                return head;
+                return head->next;
             }
 
-            // if n is at the head of the list (no previous node)
-            // return the next node, which will be the new head of list
-            return next_node;
+            // else the element is not the head
+            // patch up the linked list to link the previous node
+            // to the new next node (former next node of curr_node)
+            prev_node->next = next_node;
+
+            // return the original head of the linked list
+            return head;
+
         }
 
         // update the pointers

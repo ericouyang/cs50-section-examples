@@ -49,7 +49,9 @@ int main(void)
 
     printf("\n");
 
-    printf("Removing 9, 15, and 10...\n");
+    printf("Removing 11, 9, 15, and 10...\n");
+
+    list = ll50_remove(list, 11);
     list = ll50_remove(list, 9);
     list = ll50_remove(list, 15);
     list = ll50_remove(list, 10);
