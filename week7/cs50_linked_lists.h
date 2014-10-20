@@ -16,9 +16,6 @@ typedef struct node
     struct node* next;
 } node;
 
-// prints out a linked list to stdout
-void cs50_ll_print(node* head);
-
 // returns the length of a linked list
 int cs50_ll_length(node* head);
 
@@ -34,3 +31,9 @@ node* cs50_ll_prepend(node* head, int n);
 // returns the new head of the list
 // returns NULL if not found
 node* cs50_ll_remove(node* head, int n);
+
+// prints out a linked list to stdout
+void cs50_ll_print(node* head);
+
+// frees all elements within a linked list
+void cs50_ll_free(node* head);
