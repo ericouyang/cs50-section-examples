@@ -29,7 +29,6 @@ node* cs50_ll_prepend(node* head, int n);
 
 // removes an element from a linked list
 // returns the new head of the list
-// returns NULL if not found
 node* cs50_ll_remove(node* head, int n);
 
 // frees all elements within a linked list
