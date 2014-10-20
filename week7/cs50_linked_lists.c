@@ -45,6 +45,12 @@ node* cs50_ll_remove(node* head, int n)
     return head;
 }
 
+// frees all elements within a linked list
+void cs50_ll_free(node* head)
+{
+    // TODO
+}
+
 // prints out a linked list to stdout
 void cs50_ll_print(node* head)
 {
@@ -65,25 +71,4 @@ void cs50_ll_print(node* head)
     }
 
     printf("]\n");
-}
-
-
-// frees all elements within a linked list
-void cs50_ll_free(node* head)
-{
-    // create a pointer to track where we are in the list
-    node* curr_node = head;
-
-    // iterate through the list and free all nodes
-    while (curr_node != NULL)
-    {
-        // save the next node
-        node* next_node = curr_node->next;
-
-        // free the current node
-        free(curr_node);
-
-        // update the current location pointer
-        curr_node = next_node;
-    }
 }

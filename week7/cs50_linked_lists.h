@@ -32,8 +32,8 @@ node* cs50_ll_prepend(node* head, int n);
 // returns NULL if not found
 node* cs50_ll_remove(node* head, int n);
 
-// prints out a linked list to stdout
-void cs50_ll_print(node* head);
-
 // frees all elements within a linked list
 void cs50_ll_free(node* head);
+
+// prints out a linked list to stdout
+void cs50_ll_print(node* head);
