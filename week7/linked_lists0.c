@@ -61,4 +61,6 @@ int main(void)
 
     // test out the length function
     printf("Length: %i\n", cs50_ll_length(list));
+
+    cs50_ll_free(list);
 }
