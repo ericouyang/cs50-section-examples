@@ -2,7 +2,7 @@
  * cs50_linked_lists.c - Mini Linked Lists Library
  *
  * Computer Science 50
- * Week 6
+ * Week 7
  *
  * Eric Ouyang <eouyang@college.harvard.edu>
  * Frederick Widjaja <fwidjaja@college.harvard.edu>

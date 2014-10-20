@@ -2,7 +2,7 @@
  * linked_lists0.c - Linked List Exercise Test
  *
  * Computer Science 50
- * Week 6
+ * Week 7
  *
  * Eric Ouyang <eouyang@college.harvard.edu>
  * Frederick Widjaja <fwidjaja@college.harvard.edu>
