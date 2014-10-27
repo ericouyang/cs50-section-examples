@@ -23,6 +23,7 @@ int main(void)
         // do something here -- error checking, for example
         // we technically don't need to do any error checking here
         // because we know that str is a constant string
+        return 1;
     }
 
     // make a substring starting from right after the first space
@@ -39,6 +40,7 @@ int main(void)
     if (space2 == NULL)
     {
         // do something here
+        return 1;
     }
 
     // make a substring starting from right after the second space
@@ -68,6 +70,7 @@ int main(void)
     if (crlf1 == NULL)
     {
         // do something here
+        return 1;
     }
 
     // make a substring of the first line of str
@@ -95,12 +98,22 @@ int main(void)
 
     // get a pointer to the last space in the string
     char* last_space = strrchr(str, ' ');
+    if (last_space == NULL)
+    {
+        // do something
+        return 1;
+    }
 
     // make a substring right after the last space
     char* substr3 = last_space + 1;
 
     // get a pointer to the last period in the string
     char* last_period = strrchr(str, '.');
+    if (last_space == NULL)
+    {
+        // do something
+        return 1;
+    }
 
     // save the last word in the string
     // we can use strlen here because we know that
