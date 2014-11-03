@@ -3,14 +3,14 @@ $x = 5;
 $y = "Hello";
 $z = array("Mather", "Quincy", "Currier", "Adams");
 
-// echoing using echo and print.
+// Printing using echo and print.
 echo $x . "<br>";
 print $y . "<br>";
 echo $z[0] . "<br>";
 
 echo "<br>";
 
-// Using variables when echoing a string.
+// Using variables when printing a string.
 echo "I have $$x.<br>";
 echo "My House is {$z[3]}.<br>";
 echo "I like " . $z[1] . " House.<br>";
@@ -18,53 +18,65 @@ echo "I like " . $z[1] . " House.<br>";
 echo "<br>";
 
 $x = 5;
-// If-else statements.
-if ($x < 3) {
+// if-else statements
+if ($x < 3)
+{
     echo "Small<br>";
-} else if ($x < 7) {
+}
+else if ($x < 7)
+{
     echo "Medium<br>";
-} else {
+}
+else
+{
     echo "Large<br>";
 }
 
 echo "<br>";
 
-// For loop.
-for ($x = 0; $x < 5; $x++) {
+// for loop
+for ($x = 0; $x < 5; $x++)
+{
     echo $x . "<br>";
 }
 
 echo "<br>";
 
-// For-each loop.
+// for-each loop over an associative array
 $a = array("a" => 1, "b" => 2, "c" => 3);
-foreach ($a as $key => $value) {
+foreach ($a as $key => $value)
+{
     echo "$key: $value<br>";
 }
 
 echo "<br>";
 
-// While loop.
+// while loop
 $y = 0;
-while ($y < 5) {
+while ($y < 5)
+{
     echo $y . "<br>";
     $y++;
 }
 
 echo "<br>";
 
-// Do-while loop.
+// do-while loop
 $z = 0;
-do {
+do
+{
     echo $z . "<br>";
     $z++;
-} while ($z < 5);
+}
+while ($z < 5);
 
 echo "<br>";
 
-// Factorial function.
-function factorial($n) {
-    if ($n <= 1) {
+// factorial function
+function factorial($n)
+{
+    if ($n <= 1)
+    {
         return 1;
     }
     return $n * factorial($n - 1);
