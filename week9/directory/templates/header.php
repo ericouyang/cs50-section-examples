@@ -8,6 +8,7 @@
     <meta name="description" content="My directory is really cool." />
     <!-- Link a stylesheet so we can customize the look of our page -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/forms.css" />
   </head>
 
   <body>

@@ -57,12 +57,19 @@
      */
     function get_person($id)
     {
-        return query(
+        $result = query(
             "SELECT *
                 FROM people
                 WHERE id = ?",
             $id
         );
+
+        if (count($result == 1))
+        {
+            return $result[0];
+        }
+
+        return false;
     }
 
     /**

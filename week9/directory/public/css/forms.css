@@ -1,0 +1,12 @@
+form.horizontal label {
+  float: left;
+  width: 60px;
+}
+
+form.horizontal .field {
+  margin-bottom: 20px;
+}
+
+form.horizontal input, form.horizontal select {
+  width: 150px;
+}

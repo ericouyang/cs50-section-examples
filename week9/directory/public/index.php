@@ -4,7 +4,7 @@
     require("../includes/directory_functions.php");
 
     // render directory
-    render("people/index.php", [
+    render("people/list.php", [
         "persons" => get_all_persons()
     ]);
 
