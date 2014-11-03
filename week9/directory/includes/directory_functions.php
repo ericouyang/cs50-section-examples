@@ -21,7 +21,8 @@
      */
     function get_all_persons()
     {
-        return query("SELECT * FROM people");
+        // TODO
+        return array();
     }
 
     /**
@@ -31,23 +32,8 @@
      */
     function create_person($name, $house, $age)
     {
-        // insert person into the database
-        $result = query(
-            "INSERT INTO
-                    people (name, house, age)
-                    VALUES (?, ?, ?)",
-            $name,
-            $house,
-            $age
-        );
-
-        // if insertion unsuccessful, return false
-        if ($result === false)
-        {
-            return false;
-        }
-        // else return success
-        return true;
+        // TODO
+        return false;
     }
 
     /**
@@ -57,18 +43,7 @@
      */
     function get_person($id)
     {
-        $result = query(
-            "SELECT *
-                FROM people
-                WHERE id = ?",
-            $id
-        );
-
-        if (count($result == 1))
-        {
-            return $result[0];
-        }
-
+        // TODO
         return false;
     }
 
@@ -77,25 +52,8 @@
      */
     function edit_person($id, $name, $house, $age)
     {
-        $result = query(
-            "UPDATE people SET
-                name = ?,
-                house = ?,
-                age = ?
-                WHERE id = ?",
-            $name,
-            $house,
-            $age,
-            $id
-        );
-
-        // if update unsuccessful, return false
-        if ($result === false)
-        {
-            return false;
-        }
-        // else return success
-        return true;
+        // TODO
+        return false;
     }
 
     /**
@@ -103,18 +61,7 @@
      */
     function delete_person($id)
     {
-        $result = query(
-            "DELETE FROM people
-                WHERE id = ?",
-            $id
-        );
-
-        // if delete unsuccessful, return false
-        if ($result === false)
-        {
-            return false;
-        }
-        // else return success
-        return true;
+        // TODO
+        return false;
     }
 ?>

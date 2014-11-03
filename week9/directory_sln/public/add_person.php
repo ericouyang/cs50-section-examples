@@ -5,7 +5,11 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-        // TODO
+        // create the person
+        if (create_person($_POST['name'], $_POST['house'], $_POST['age']) === false)
+        {
+            apologize("There was a problem with creating the entry. Please try again");
+        }
 
         redirect("/");
     }
