@@ -1,0 +1,36 @@
+body {
+  /* change the font */
+  font-family: "Georgia", serif;
+
+  /* center all the text on the webpage */
+  text-align: center;
+
+  /* add a margin to the top of the webpage */
+  margin-top: 50px;
+}
+
+span.red {
+  /* change the color of all spans with the class red */
+  color: red;
+}
+
+h1 {
+  /* make all level one headers bold */
+  font-weight: bold;
+}
+
+p {
+  /* make the text used in paragraphs bigger */
+  font-size: 20px;
+}
+
+div#below p {
+    /* make all the text in paragraphs uppercase */
+    text-transform: uppercase;
+}
+
+img {
+  /* add some padding to the top and bottom of images */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
