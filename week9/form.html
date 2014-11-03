@@ -1,19 +1,39 @@
-<form action="register.php" method="post">
-  <div class="field">
-    <input name="name" placeholder="Your name" type="text" autofocus="true" required="true" />
-  </div>
-  <div class="field">
-    <label>House</label>
-    <select name="house">
-      <option value="adams">Adams House</option>
-      <option value="quincy">Quincy House</option>
-      <option value="leverett">Leverett House</option>
-    </select>
-  </div>
-  <div class="field">
-    <input name="age" placeholder="Your age" type="text" />
-  </div>
-  <div class="field">
-    <input type="submit" value="Register me!" />
-  </div>
-</form>
+<!DOCTYPE html>
+<html>
+  <!-- Metadata about the website -->
+  <head>
+    <!-- Set the title that shows up in the tabs in web browsers -->
+    <title>Welcome to my simple form!</title>
+    <!-- Set the description used in search engines -->
+    <meta name="description" content="My form is really cool." />
+    <!-- Link a stylesheet so we can customize the look of our page -->
+    <link rel="stylesheet" href="forms.css" />
+  </head>
+
+  <!-- The actual content of the website -->
+  <body>
+      <h1>Register yourself!</h1>
+      <!-- Open up a form that submits information to register.php via POST -->
+      <form action="register.php" method="post" class="horizontal">
+        <div class="field">
+          <label>Name:</label>
+          <input name="name" placeholder="Your name" type="text" autofocus="true" required="true" />
+        </div>
+        <div class="field">
+          <label>House:</label>
+          <select name="house">
+            <option value="adams">Adams House</option>
+            <option value="quincy">Quincy House</option>
+            <option value="leverett">Leverett House</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Age:</label>
+          <input name="age" placeholder="Your age" type="text" />
+        </div>
+        <div class="field">
+          <input type="submit" value="Register me!" />
+        </div>
+      </form>
+  </body>
+</html>
