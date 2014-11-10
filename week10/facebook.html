@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Look up someone on Facebook!</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="text-center">Look someone up on Facebook!</h2>
+            <br />
+            <div class="row">
+                <form class="col-sm-4 col-sm-offset-2">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input id="username" type="text" class="form-control" placeholder="Username">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="submit">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <div id="fb_user" class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p>
+                                <strong>ID:</strong>
+                            </p>
+                            <p>
+                                <strong>Username:</strong>
+                            </p>
+                            <p>
+                                <strong>First name:</strong>
+                            </p>
+                            <p>
+                                <strong>Last name:</strong>
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/facebook_sln.js"></script>
+    </body>
+</html>
