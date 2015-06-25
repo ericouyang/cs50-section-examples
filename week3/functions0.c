@@ -9,6 +9,7 @@
  *
  * Write a function that squares a given integer input
  */
+ 
 #include <stdio.h>
 #include <cs50.h>
 

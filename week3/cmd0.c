@@ -7,6 +7,7 @@
  * Eric Ouyang <eouyang@college.harvard.edu>
  * Frederick Widjaja <fwidjaja@college.harvard.edu>
  */
+ 
 #include <stdio.h>
 #include <cs50.h>
 

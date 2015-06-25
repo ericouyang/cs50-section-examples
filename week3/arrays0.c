@@ -9,6 +9,7 @@
  *
  * Let's declare some arrays
  */
+ 
 #include <stdio.h>
 #include <cs50.h>
 

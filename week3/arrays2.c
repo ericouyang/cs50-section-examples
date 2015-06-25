@@ -9,6 +9,7 @@
  *
  * Prints each character in the name on one line
  */
+ 
 #include <stdio.h>
 #include <cs50.h>
 

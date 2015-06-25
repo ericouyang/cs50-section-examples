@@ -9,6 +9,7 @@
  *
  * The code below has a bug. Let's find it!
  */
+ 
 #include <stdio.h>
 #include <cs50.h>
 
