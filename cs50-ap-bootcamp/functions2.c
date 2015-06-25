@@ -1,5 +1,5 @@
 /**
- * function3.c - Function Scoping
+ * function2.c - Function Scoping
  *
  * Computer Science 50
  * Week 3
@@ -7,7 +7,7 @@
  * Eric Ouyang <eouyang@college.harvard.edu>
  * Frederick Widjaja <fwidjaja@college.harvard.edu>
  */
- 
+
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
