@@ -19,7 +19,7 @@ int increment(int x)
 
 int main(void)
 {
-    // create a new variable n and initiatize it to 5
+    // create a new variable n and initialize it to 5
     int x = 5;
 
     // increment the variable by 1
