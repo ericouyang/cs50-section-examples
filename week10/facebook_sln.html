@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Look up someone on Facebook!</title>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <title>Look up yourself up on Facebook!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container">
-            <h2 class="text-center">Look someone up on Facebook!</h2>
+            <h2 class="text-center">Look yourself up on Facebook!</h2>
             <br />
             <div class="row">
-                <form class="col-sm-4 col-sm-offset-2">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input id="username" type="text" class="form-control" placeholder="Username">
-                            <span class="input-group-btn">
-                              <button class="btn btn-default" type="submit">Go!</button>
-                            </span>
-                        </div>
-                    </div>
-                </form>
+                <div class="col-sm-4 col-sm-offset-2">
+                    <p id="fb-status"></p>
+                    <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div>
+                </div>
                 <div id="fb_user" class="col-sm-6">
                     <div class="row">
                         <div class="col-sm-6">
@@ -26,7 +20,7 @@
                                 <strong>ID:</strong> <span id="fb-id"></span>
                             </p>
                             <p>
-                                <strong>Username:</strong> <span id="fb-username"></span>
+                                <strong>Email:</strong> <span id="fb-email"></span>
                             </p>
                             <p>
                                 <strong>First name:</strong> <span id="fb-first-name"></span>
@@ -40,7 +34,16 @@
                 </div>
             </div>
         </div>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="js/facebook_sln.js"></script>
+        <script>
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
     </body>
 </html>
